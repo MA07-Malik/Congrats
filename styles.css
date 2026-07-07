@@ -91,9 +91,10 @@
 
 /* Envelope float and cinematic landing */
 .envelope-wrap {
-  display: grid;
-  place-items: center;
-  perspective: 1400px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  perspective: 1200px;
 }
 
 .envelope {
@@ -461,10 +462,6 @@ button {
   inset: 0;
   background: radial-gradient(circle at center, rgba(255,255,255,0.4), transparent 45%);
   opacity: 0.75;
-}
-
-.envelope-wrap {
-  perspective: 1200px;
 }
 
 .envelope {
