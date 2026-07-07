@@ -1,0 +1,1773 @@
+/* =====================================================
+   GOOGLE DESIGN VARIABLES
+===================================================== */
+
+:root{
+
+    --primary:#5BA7FF;
+    --secondary:#7FD7FF;
+    --pink:#FFD6E8;
+    --gold:#FFD76B;
+    --navy:#203A63;
+    --text:#425372;
+    --glass:rgba(255,255,255,.28);
+    --border:rgba(255,255,255,.45);
+    --shadow:0 20px 60px rgba(0,0,0,.15);
+
+}
+
+
+/* =====================================================
+RESET
+===================================================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    overflow-x:hidden;
+
+    background:#EAF6FF;
+
+    font-family:'Poppins',sans-serif;
+
+    color:var(--text);
+
+}
+
+.hidden{
+
+    display:none;
+
+}
+
+
+/* =====================================================
+BACKGROUND CANVAS
+===================================================== */
+
+#bg-canvas{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:-1;
+
+}
+
+
+/* =====================================================
+LOADING SCREEN
+===================================================== */
+
+#loading-screen{
+
+    position:fixed;
+
+    inset:0;
+
+    background:linear-gradient(180deg,#071B36,#102D58,#183F73);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:99999;
+
+    transition:1s;
+
+}
+
+.loader-content{
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.loader-heart{
+
+    font-size:70px;
+
+    animation:heartbeat 1.5s infinite;
+
+}
+
+.loader-content h1{
+
+    margin-top:20px;
+
+    font-size:42px;
+
+    font-family:'Playfair Display',serif;
+
+}
+
+.loader-content p{
+
+    margin-top:15px;
+
+    opacity:.8;
+
+}
+
+
+/* =====================================================
+MAIN PAGE
+===================================================== */
+
+#page-shell{
+
+    position:relative;
+
+    width:100%;
+
+}
+
+
+/* =====================================================
+MUSIC BUTTON
+===================================================== */
+
+#musicBtn{
+
+    position:fixed;
+
+    right:30px;
+
+    top:30px;
+
+    width:60px;
+
+    height:60px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    font-size:24px;
+
+    background:linear-gradient(135deg,#5BA7FF,#A6DFFF);
+
+    color:white;
+
+    box-shadow:var(--shadow);
+
+    z-index:999;
+
+    transition:.35s;
+
+}
+
+#musicBtn:hover{
+
+    transform:scale(1.08);
+
+}
+
+
+/* =====================================================
+HERO
+===================================================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:100px 20px;
+
+}
+
+.hero h1{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:80px;
+
+    color:var(--navy);
+
+    line-height:1.1;
+
+}
+
+.hero p{
+
+    margin-top:25px;
+
+    max-width:700px;
+
+    font-size:22px;
+
+    line-height:1.8;
+
+}
+
+
+/* =====================================================
+MEDICAL ICONS
+===================================================== */
+
+.medicalIcons{
+
+    display:flex;
+
+    gap:25px;
+
+    margin-bottom:45px;
+
+}
+
+.medicalIcons div{
+
+    width:80px;
+
+    height:80px;
+
+    border-radius:25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:40px;
+
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:var(--shadow);
+
+    animation:floatIcon 5s infinite ease-in-out;
+
+}
+
+.medicalIcons div:nth-child(2){
+
+    animation-delay:.5s;
+
+}
+
+.medicalIcons div:nth-child(3){
+
+    animation-delay:1s;
+
+}
+
+.medicalIcons div:nth-child(4){
+
+    animation-delay:1.5s;
+
+}
+/* =====================================================
+   GOOGLE DESIGN VARIABLES
+===================================================== */
+
+:root{
+
+    --primary:#5BA7FF;
+    --secondary:#7FD7FF;
+    --pink:#FFD6E8;
+    --gold:#FFD76B;
+    --navy:#203A63;
+    --text:#425372;
+    --glass:rgba(255,255,255,.28);
+    --border:rgba(255,255,255,.45);
+    --shadow:0 20px 60px rgba(0,0,0,.15);
+
+}
+
+
+/* =====================================================
+RESET
+===================================================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    overflow-x:hidden;
+
+    background:#EAF6FF;
+
+    font-family:'Poppins',sans-serif;
+
+    color:var(--text);
+
+}
+
+.hidden{
+
+    display:none;
+
+}
+
+
+/* =====================================================
+BACKGROUND CANVAS
+===================================================== */
+
+#bg-canvas{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:-1;
+
+}
+
+
+/* =====================================================
+LOADING SCREEN
+===================================================== */
+
+#loading-screen{
+
+    position:fixed;
+
+    inset:0;
+
+    background:linear-gradient(180deg,#071B36,#102D58,#183F73);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:99999;
+
+    transition:1s;
+
+}
+
+.loader-content{
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.loader-heart{
+
+    font-size:70px;
+
+    animation:heartbeat 1.5s infinite;
+
+}
+
+.loader-content h1{
+
+    margin-top:20px;
+
+    font-size:42px;
+
+    font-family:'Playfair Display',serif;
+
+}
+
+.loader-content p{
+
+    margin-top:15px;
+
+    opacity:.8;
+
+}
+
+
+/* =====================================================
+MAIN PAGE
+===================================================== */
+
+#page-shell{
+
+    position:relative;
+
+    width:100%;
+
+}
+
+
+/* =====================================================
+MUSIC BUTTON
+===================================================== */
+
+#musicBtn{
+
+    position:fixed;
+
+    right:30px;
+
+    top:30px;
+
+    width:60px;
+
+    height:60px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    font-size:24px;
+
+    background:linear-gradient(135deg,#5BA7FF,#A6DFFF);
+
+    color:white;
+
+    box-shadow:var(--shadow);
+
+    z-index:999;
+
+    transition:.35s;
+
+}
+
+#musicBtn:hover{
+
+    transform:scale(1.08);
+
+}
+
+
+/* =====================================================
+HERO
+===================================================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:100px 20px;
+
+}
+
+.hero h1{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:80px;
+
+    color:var(--navy);
+
+    line-height:1.1;
+
+}
+
+.hero p{
+
+    margin-top:25px;
+
+    max-width:700px;
+
+    font-size:22px;
+
+    line-height:1.8;
+
+}
+
+
+/* =====================================================
+MEDICAL ICONS
+===================================================== */
+
+.medicalIcons{
+
+    display:flex;
+
+    gap:25px;
+
+    margin-bottom:45px;
+
+}
+
+.medicalIcons div{
+
+    width:80px;
+
+    height:80px;
+
+    border-radius:25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:40px;
+
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:var(--shadow);
+
+    animation:floatIcon 5s infinite ease-in-out;
+
+}
+
+.medicalIcons div:nth-child(2){
+
+    animation-delay:.5s;
+
+}
+
+.medicalIcons div:nth-child(3){
+
+    animation-delay:1s;
+
+}
+
+.medicalIcons div:nth-child(4){
+
+    animation-delay:1.5s;
+
+}
+/* =====================================================
+ANIMATIONS
+===================================================== */
+
+@keyframes heartbeat{
+
+0%{
+transform:scale(1);
+}
+
+20%{
+transform:scale(1.18);
+}
+
+40%{
+transform:scale(1);
+}
+
+60%{
+transform:scale(1.15);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+@keyframes floatIcon{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+@keyframes popupUp{
+
+0%{
+
+opacity:0;
+transform:translateY(70px) scale(.85);
+
+}
+
+100%{
+
+opacity:1;
+transform:translateY(0) scale(1);
+
+}
+
+}
+
+@keyframes fadeUp{
+
+0%{
+
+opacity:0;
+transform:translateY(50px);
+
+}
+
+100%{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+@keyframes glow{
+
+0%{
+
+box-shadow:0 0 10px rgba(255,215,100,.4);
+
+}
+
+50%{
+
+box-shadow:0 0 40px rgba(255,215,100,.8);
+
+}
+
+100%{
+
+box-shadow:0 0 10px rgba(255,215,100,.4);
+
+}
+
+}
+
+@keyframes sparkle{
+
+0%{
+
+opacity:.3;
+transform:scale(.6);
+
+}
+
+50%{
+
+opacity:1;
+transform:scale(1.3);
+
+}
+
+100%{
+
+opacity:.3;
+transform:scale(.6);
+
+}
+
+}
+
+@keyframes floatingHeart{
+
+0%{
+
+transform:translateY(0) scale(1);
+opacity:0;
+
+}
+
+20%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-220px) scale(1.6);
+opacity:0;
+
+}
+
+}
+
+
+/* =====================================================
+CUSTOM CURSOR
+===================================================== */
+
+.cursor{
+
+position:fixed;
+
+width:18px;
+
+height:18px;
+
+border-radius:50%;
+
+background:white;
+
+box-shadow:0 0 20px rgba(255,255,255,.9);
+
+pointer-events:none;
+
+transform:translate(-50%,-50%);
+
+z-index:999999;
+
+mix-blend-mode:difference;
+
+transition:.05s linear;
+
+}
+
+
+/* =====================================================
+SPARKLES
+===================================================== */
+
+.sparkle{
+
+position:absolute;
+
+width:6px;
+
+height:6px;
+
+border-radius:50%;
+
+background:white;
+
+animation:sparkle 1.8s infinite;
+
+}
+
+
+/* =====================================================
+FLOATING HEARTS
+===================================================== */
+
+.heart{
+
+position:fixed;
+
+font-size:22px;
+
+pointer-events:none;
+
+animation:floatingHeart 4s linear forwards;
+
+z-index:99999;
+
+}
+
+
+/* =====================================================
+SCROLLBAR
+===================================================== */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#EDF6FF;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#9FD5FF;
+
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#63B3FF;
+
+}
+
+
+/* =====================================================
+RESPONSIVE
+===================================================== */
+
+@media(max-width:900px){
+
+.hero h1{
+
+font-size:58px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.gpa-card h2{
+
+font-size:55px;
+
+}
+
+.popup-card{
+
+padding:35px;
+
+}
+
+.popup-card h2{
+
+font-size:34px;
+
+}
+
+#letterContent{
+
+font-size:24px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.hero{
+
+padding:80px 20px;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero p{
+
+font-size:17px;
+
+}
+
+.medicalIcons{
+
+gap:12px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+.medicalIcons div{
+
+width:60px;
+
+height:60px;
+
+font-size:28px;
+
+}
+
+.gpa-card{
+
+padding:30px;
+
+}
+
+.gpa-card h2{
+
+font-size:42px;
+
+}
+
+.popup-card{
+
+padding:28px;
+
+}
+
+.popup-card h2{
+
+font-size:28px;
+
+}
+
+.popup-card p{
+
+font-size:17px;
+
+}
+
+.envelope{
+
+width:300px;
+
+height:200px;
+
+}
+
+#letterContent{
+
+font-size:20px;
+
+}
+
+footer{
+
+font-size:16px;
+
+}
+
+}
+
+
+/* =====================================================
+SMOOTH TRANSITIONS
+===================================================== */
+
+.hero,
+.gpa-card,
+.popup-card,
+.envelope,
+.letter,
+button{
+
+transition:.4s ease;
+
+}
+
+
+/* =====================================================
+GOLD GLOW
+===================================================== */
+
+.glow{
+
+animation:glow 2.5s infinite;
+
+}
+/* =====================================================
+ANIMATIONS
+===================================================== */
+
+@keyframes heartbeat{
+
+0%{
+transform:scale(1);
+}
+
+20%{
+transform:scale(1.18);
+}
+
+40%{
+transform:scale(1);
+}
+
+60%{
+transform:scale(1.15);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+@keyframes floatIcon{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+@keyframes popupUp{
+
+0%{
+
+opacity:0;
+transform:translateY(70px) scale(.85);
+
+}
+
+100%{
+
+opacity:1;
+transform:translateY(0) scale(1);
+
+}
+
+}
+
+@keyframes fadeUp{
+
+0%{
+
+opacity:0;
+transform:translateY(50px);
+
+}
+
+100%{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+@keyframes glow{
+
+0%{
+
+box-shadow:0 0 10px rgba(255,215,100,.4);
+
+}
+
+50%{
+
+box-shadow:0 0 40px rgba(255,215,100,.8);
+
+}
+
+100%{
+
+box-shadow:0 0 10px rgba(255,215,100,.4);
+
+}
+
+}
+
+@keyframes sparkle{
+
+0%{
+
+opacity:.3;
+transform:scale(.6);
+
+}
+
+50%{
+
+opacity:1;
+transform:scale(1.3);
+
+}
+
+100%{
+
+opacity:.3;
+transform:scale(.6);
+
+}
+
+}
+
+@keyframes floatingHeart{
+
+0%{
+
+transform:translateY(0) scale(1);
+opacity:0;
+
+}
+
+20%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-220px) scale(1.6);
+opacity:0;
+
+}
+
+}
+
+
+/* =====================================================
+CUSTOM CURSOR
+===================================================== */
+
+.cursor{
+
+position:fixed;
+
+width:18px;
+
+height:18px;
+
+border-radius:50%;
+
+background:white;
+
+box-shadow:0 0 20px rgba(255,255,255,.9);
+
+pointer-events:none;
+
+transform:translate(-50%,-50%);
+
+z-index:999999;
+
+mix-blend-mode:difference;
+
+transition:.05s linear;
+
+}
+
+
+/* =====================================================
+SPARKLES
+===================================================== */
+
+.sparkle{
+
+position:absolute;
+
+width:6px;
+
+height:6px;
+
+border-radius:50%;
+
+background:white;
+
+animation:sparkle 1.8s infinite;
+
+}
+
+
+/* =====================================================
+FLOATING HEARTS
+===================================================== */
+
+.heart{
+
+position:fixed;
+
+font-size:22px;
+
+pointer-events:none;
+
+animation:floatingHeart 4s linear forwards;
+
+z-index:99999;
+
+}
+
+
+/* =====================================================
+SCROLLBAR
+===================================================== */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#EDF6FF;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#9FD5FF;
+
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#63B3FF;
+
+}
+
+
+/* =====================================================
+RESPONSIVE
+===================================================== */
+
+@media(max-width:900px){
+
+.hero h1{
+
+font-size:58px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.gpa-card h2{
+
+font-size:55px;
+
+}
+
+.popup-card{
+
+padding:35px;
+
+}
+
+.popup-card h2{
+
+font-size:34px;
+
+}
+
+#letterContent{
+
+font-size:24px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.hero{
+
+padding:80px 20px;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero p{
+
+font-size:17px;
+
+}
+
+.medicalIcons{
+
+gap:12px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+.medicalIcons div{
+
+width:60px;
+
+height:60px;
+
+font-size:28px;
+
+}
+
+.gpa-card{
+
+padding:30px;
+
+}
+
+.gpa-card h2{
+
+font-size:42px;
+
+}
+
+.popup-card{
+
+padding:28px;
+
+}
+
+.popup-card h2{
+
+font-size:28px;
+
+}
+
+.popup-card p{
+
+font-size:17px;
+
+}
+
+.envelope{
+
+width:300px;
+
+height:200px;
+
+}
+
+#letterContent{
+
+font-size:20px;
+
+}
+
+footer{
+
+font-size:16px;
+
+}
+
+}
+
+
+/* =====================================================
+SMOOTH TRANSITIONS
+===================================================== */
+
+.hero,
+.gpa-card,
+.popup-card,
+.envelope,
+.letter,
+button{
+
+transition:.4s ease;
+
+}
+
+
+/* =====================================================
+GOLD GLOW
+===================================================== */
+
+.glow{
+
+animation:glow 2.5s infinite;
+
+}
+
+/* =====================================================
+GLASS GPA CARD
+===================================================== */
+
+.gpa-section{
+
+    display:flex;
+
+    justify-content:center;
+
+    padding:70px 20px;
+
+}
+
+.gpa-card{
+
+    width:min(750px,95%);
+
+    background:rgba(255,255,255,.28);
+
+    backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,.55);
+
+    border-radius:35px;
+
+    padding:45px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:.5s;
+
+}
+
+.gpa-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 35px 90px rgba(0,0,0,.18);
+
+}
+
+.badge{
+
+    display:inline-block;
+
+    padding:12px 28px;
+
+    border-radius:40px;
+
+    background:#FFF1B5;
+
+    color:#856300;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+}
+
+.gpa-card h2{
+
+    font-size:70px;
+
+    color:var(--navy);
+
+    font-family:'Playfair Display',serif;
+
+}
+
+.gpa-card p{
+
+    margin-top:18px;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+}
+
+
+/* =====================================================
+POPUP
+===================================================== */
+
+.popup{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.65);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.6s;
+
+    z-index:9999;
+
+}
+
+.popup.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.popup-card{
+
+    width:min(650px,92%);
+
+    background:white;
+
+    border-radius:35px;
+
+    padding:50px;
+
+    text-align:center;
+
+    box-shadow:0 40px 100px rgba(0,0,0,.25);
+
+    animation:popupUp .7s ease;
+
+}
+
+.popup-card h2{
+
+    font-size:42px;
+
+    color:var(--navy);
+
+    margin-bottom:20px;
+
+    font-family:'Playfair Display',serif;
+
+}
+
+.popup-card p{
+
+    font-size:20px;
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+
+}
+
+.popup-card button{
+
+    border:none;
+
+    padding:16px 40px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    background:linear-gradient(135deg,#5BA7FF,#9AD9FF);
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.popup-card button:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+/* =====================================================
+ENVELOPE
+===================================================== */
+
+.envelope-section{
+
+    display:flex;
+
+    justify-content:center;
+
+    padding:70px 20px;
+
+}
+
+.envelope{
+
+    width:360px;
+
+    height:240px;
+
+    position:relative;
+
+    cursor:pointer;
+
+    perspective:1200px;
+
+}
+
+.envelope-body{
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:18px;
+
+    background:#F8FBFF;
+
+    box-shadow:var(--shadow);
+
+    overflow:hidden;
+
+}
+
+.envelope-flap{
+
+    position:absolute;
+
+    width:100%;
+
+    height:120px;
+
+    background:#D8ECFF;
+
+    clip-path:polygon(0 0,100% 0,50% 100%);
+
+    transform-origin:top;
+
+    transition:1s;
+
+    z-index:5;
+
+}
+
+.envelope.open .envelope-flap{
+
+    transform:rotateX(180deg);
+
+}
+
+
+/* =====================================================
+LETTER
+===================================================== */
+
+.letter{
+
+    position:absolute;
+
+    left:50%;
+
+    transform:translateX(-50%) translateY(30px);
+
+    width:92%;
+
+    height:90%;
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    opacity:0;
+
+    transition:1s;
+
+    overflow-y:auto;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+}
+
+.envelope.open .letter{
+
+    opacity:1;
+
+    transform:translateX(-50%) translateY(-40px);
+
+}
+
+#letterContent{
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:30px;
+
+    line-height:1.8;
+
+    color:#23385B;
+
+}
+
+
+/* =====================================================
+FOOTER
+===================================================== */
+
+footer{
+
+    padding:60px 20px;
+
+    text-align:center;
+
+    font-size:18px;
+
+    color:#5D6F8E;
+
+}
+
+footer span{
+
+    color:#FF4F8B;
+
+}
+
+
+/* =====================================================
+SCROLL ANIMATION
+===================================================== */
+
+.fade{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:1s;
+
+}
+
+.fade.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
