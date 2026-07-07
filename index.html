@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Congratulations, Nursing Star!</title>
+  <meta name="description" content="A premium congratulatory greeting for a nursing student with a 3.8 GPA." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="loading-screen" id="loading-screen">
+    <div class="loader-content">
+      <div class="cinematic-intro">
+        <canvas id="intro-canvas" aria-hidden="true"></canvas>
+        <div class="intro-texts">
+          <h2 class="intro-line" data-line="Someone made something special for you...">Someone made something special for you...</h2>
+          <h2 class="intro-line" data-line="Take a deep breath...">Take a deep breath...</h2>
+          <h2 class="intro-line" data-line="This celebration is for one extraordinary person...">This celebration is for one extraordinary person...</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-shell hidden" id="page-shell">
+    <canvas id="bg-canvas"></canvas>
+    <div class="floating-ui">
+      <button class="music-button" id="music-button" aria-label="Toggle background music">🎵</button>
+    </div>
+    <main class="hero-section">
+      <div class="hero-card">
+        <div class="hero-icons">
+          <span class="icon floating-icon">🩺</span>
+          <span class="icon floating-icon delay-1">💉</span>
+          <span class="icon floating-icon delay-2">❤️</span>
+          <span class="icon floating-icon delay-3">🏥</span>
+        </div>
+        <div class="hero-copy">
+          <h1>🎉 Congratulations! 🎉</h1>
+          <p>Congratulations on achieving your amazing <strong>3.8 GPA</strong>!</p>
+        </div>
+      </div>
+    </main>
+
+    <section class="achievement-section">
+      <div class="glass-card">
+        <div class="card-badge">🏆 Achievement Unlocked</div>
+        <h2>3.8 GPA</h2>
+        <p>Your dedication, hard work, and perseverance have brought you to this beautiful milestone.</p>
+      </div>
+    </section>
+
+    <section class="surprise-section">
+      <button class="surprise-button" id="surprise-button">💌 Open Your Special Letter</button>
+      <div class="envelope-wrap hidden" id="envelope-wrap">
+        <div class="envelope">
+          <div class="envelope-flap"></div>
+          <div class="envelope-body"></div>
+          <div class="letter" id="letter">
+            <div class="letter-content" id="letter-content"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      Made with <span class="heart">❤️</span> especially for you.
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
